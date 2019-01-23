@@ -1,0 +1,47 @@
+
+@import '../../index.scss';
+
+#header {
+  position: relative;
+  width: 100%;
+  .header-bg {
+    height: px2rem(54.5px);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .header-context {
+    position: absolute;
+    top: 0;
+    display: flex;
+    color: #ffffff;
+    width: 100%;
+    height: px2rem(54.5px);
+    align-items: center;
+    .logo {
+      background-image: url("../../static/images/logo.png");
+      background-size: 100% 100%;
+      width: px2rem(40px);
+      height: px2rem(40px);
+      margin: 0 px2rem(8.5px) 0 px2rem(11.5px);
+    }
+    .logo-text {
+      .app-name {
+        font-size: px2rem(15px);
+      }
+      .app-summary {
+        font-size: px2rem(12px);
+      }
+    }
+    .register {
+      width: px2rem(87px);
+      height: px2rem(40px);
+      border-radius: px2rem(20px);
+      background-color: #ff1e4d;
+      position: absolute;
+      right: px2rem(10.5px);
+      font-family: "PingFangSC-Medium";
+      font-size: px2rem(16px);
+      line-height: px2rem(40px);
+      text-align: center;
+    }
+  }
+}
