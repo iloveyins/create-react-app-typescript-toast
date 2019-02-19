@@ -26,6 +26,7 @@ export default class ApplyJoin extends React.Component<IProps, IState>{
     private header = {
         isOpen: true,
         onOpen: () => {
+            console.log("d");
             Toast.fail("打开成功", 2, () => {
                 this.setState({ header: { title: "sdf" } })
             });
@@ -34,7 +35,6 @@ export default class ApplyJoin extends React.Component<IProps, IState>{
 
     constructor(props: IProps, context: IState) {
         super(props, context);
-
         this.state = {
             header: this.header
         }

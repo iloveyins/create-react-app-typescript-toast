@@ -20,9 +20,7 @@ export default function Header(props: IProps) {
                     <div className="app-name">{name ? name : '十方舟'}</div>
                     <div className="app-summary"> {title ? title : ' 注册即得 20元 知识红包'}</div>
                 </div>
-                {
-                    <div className="register" onClick={props.onOpen}> {isOpen ? '打开APP' : '立即注册'} </div>
-                }
+                <div className="register" onClick={props.onOpen}> {isOpen ? '打开APP' : '立即注册'} </div>
             </div>
         </header>
     )

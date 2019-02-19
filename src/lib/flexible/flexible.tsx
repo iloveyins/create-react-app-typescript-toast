@@ -30,7 +30,7 @@
 
   // reset rem unit on page resize
   window.addEventListener('resize', setRemUnit)
-  
+
   //@ts-ignore
   window.addEventListener('pageshow', function (e) {
     if (e.persisted) {

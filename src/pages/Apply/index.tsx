@@ -22,7 +22,11 @@ export default class Apply extends React.Component<IProps, IState> {
     render() {
         return (
             <div id="apply">
-                <div className="apply-bg"></div>
+                <div className="apply-bg" onClick={() => {
+                    alert("d");
+                }}
+                >v
+                </div>
                 <div className="apply-content">
                 </div>
             </div>
